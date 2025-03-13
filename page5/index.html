@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        *{
+          margin: 0px;
+          padding: 0px;
+        }
+        body {
+
+          font-family: 'Poppins', sans-serif;
+        }
+        #image{
+          display: block;
+        }
+        input::placeholder {
+      color: white !important;
+      opacity: 1;
+  }
+        #jj{
+          display: block;
+        }
+
+        @media (max-width:990px) {
+          .jj{
+            background-image: none;
+            }
+          .suub{
+            display: flex;
+            flex-direction: column;
+          }
+    
+        }
+
+        @media (max-width: 991px) { /* عندما تصبح القائمة منسدلة على الجوال */
+  .navbar-nav .nav-link {
+    color: black !important; /* تغيير لون الروابط إلى الأسود */
+  }
+}
+
+        @media (max-width:990px) {
+          .image{
+           
+            display: none;
+            }
+        }
+        .subscribe-section input::placeholder {
+    color: rgba(0, 0, 0, 0.295) !important;
+    opacity: 1;
+  }
+  
+  .border-gradient {
+    border-bottom: 3px solid; /* Thickness of the border */
+    border-image: linear-gradient(135deg, #634AFF, #FF5631, #FDFC8A);
+    border-image-slice: 1;
+}
+
+    </style>
+</head>
+<body>
+  <div>
+    <div style="height:1150px;background-image: url(./assets/background.svg);background-size: cover; background-repeat: no-repeat;">
+    <nav class="navbar navbar-expand-lg navbar-light  " style="color:black; padding: 28px 60px;">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" style="font-size: 24px;" href="#">
+            Hypability
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class=" navbar-nav d-flex align-items-center gap-4 me-5">
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#" style="color: #ffffff;">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#" style="color: #ffffff;">Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#" style="color: #ffffff;">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#" style="color: #ffffff;">Contact</a>
+              </li>
+            </ul>
+      
+            <button type="button" class="btn btn-light rounded-5 fw-bold " style="padding:10px 36px;">
+              Login
+            </button>
+          </div>
+        </div>
+      </nav>
+
+    
+      <section class="container-fluid " >
+        <div class="row align-items-center " style="margin-top: 100px;">
+          <div class="col-12 col-md-6" >
+            <div style="margin-left:58px;">
+            <h1 style="margin-bottom:40px;font-size:52px;font-weight:700;line-height:120%;">
+              Search and Filter<br class="d-none d-md-block" />1.4 Bllion TikTok <br class="d-none d-md-block " />Profiles
+            </h1>
+            <p class=" fs-6"style="margin-bottom:90px;line-height:184%;">
+              Start Using The #1 filter system
+              <br class="d-none d-md-block " />Join +50.000 people saving time
+            </p>
+            <button type="button" class="btn btn-dark rounded-1 fw-bold " style="padding:10px 36px;">
+              Get Started
+            </button>
+          </div></div>
+
+          <div class="col-12 col-md-6 pe-0 text-end mt-4 mt-md-0" >
+            <img src="./assets/1ph.svg" class="img-fluid w-100" qalt="" />
+          </div>
+         </div>
+    </section>
+
+  </div>
+  <div class=" py-5 w-100" style="background-color:rgba(255, 255, 255, 1);">
+    <div class="text-center mb-5">
+      <p class="fs-4 fw-bold">
+        Trusted by 1000s of Companies to Fuel Business Growth!
+      </p>
+      <p class="fs-6 text-muted" style="line-height:160%;">
+        From VC backed startups to established SaaS to agencies to fast
+        growing B2B brands –<br class="d-none d-md-block" />
+        all use our data extraction services to grow fast!
+      </p>
+    </div>
+  
+  <div class="container d-flex flex-wrap justify-content-center gap-5 ">
+    <img src="./assets/astera 1.svg " class="img-fluid" style="width:140px;" alt="">
+    <img src="./assets/SU 1.svg" class="img-fluid" style="width:140px;" alt="">
+    <img src="./assets/saba-software-logo-vector-2021 1.svg" class="img-fluid" style="width:140px;" alt="">
+    <img src="./assets/sonata 1.svg" class="img-fluid" style="width:180px;" alt="">
+  </div>
+  </div>
+
+    <div  style="background-image: url(./assets/cye.svg);background-size:cover ;background-position:center;">
+      <section class="container d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-start py-5 px-4 gap-4 " style="height: 306px;">
+        <div>
+          <p class="fw-bold fs-2">Take Your Company to the Next Level</p>
+          <p class="text-muted" style="font-size:14px;">Our customers have made hundreds of thousands of dollars using our fully verified leads</p>
+        </div>
+      
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2   ">
+          <button type="button" class="btn text-white fs-6  fw-medium" 
+            style="background-color: black; height: 44px;  width: 142px;">
+            <img src="./assets/shopping-bag.svg" alt="">
+            Buy Now
+          </button>
+          <button type="button" class="btn btn-outline-dark fs-6  " 
+            style="height: 44px; width: 221px;">
+            <img src="./assets/download.svg" alt="">
+            Download Sample
+          </button>
+        </div>
+      </section>
+
+
+      <section class="py-5">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h2 style="font-size: 42px; font-weight: bold;">How It Works</h2>
+                <p style="padding-bottom:70px;">We don't need your Twitter account login and our software runs on our servers.</p>
+            </div>
+    
+            <!-- Steps Container -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Steps Row -->
+                    <div class="row">
+                        <!-- Steps Numbers Column -->
+                        <div class="col-2">
+                            <div class="d-flex flex-column" style="gap:140px;">
+                                <h3 style="font-size: 24px; font-weight: bold;">STEP 1</h3>
+                                <h3 style="font-size: 24px; font-weight: bold;">STEP 2</h3>
+                                <h3 style="font-size: 24px; font-weight: bold;">STEP 3</h3>
+                            </div>
+                        </div>
+    
+                        <!-- Timeline Image Column -->
+                        <div class="col-1 px-0">
+                            <img class="image" src="./assets/points.svg" alt="Timeline" style="height: 400px;">
+                        </div>
+    
+                        <!-- Content Column -->
+                        <div class="col-9">
+                            <div class="d-flex flex-column fs-6 " style="gap:90px;max-width: 430px
+;">
+                                <p style="  margin-bottom: 0;">
+                                    Search Twitter for your target audience and Twitter accounts that have authority in your niche and copy their Twitter usernames.
+                                </p>
+                                <p style="  margin-bottom: 0;">
+                                    Enter the Twitter usernames in our software and select if you want to extract their user followers, user following or both. Decide how many users to extract, and click start.
+                                </p>
+                                <p style="  margin-bottom: 0;">
+                                    Our software will run and extract every user, match these users to our vast database and allow you to download all results to CSV. You will be notified when your data is complete and ready to download.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <div style="width: 100%;">
+        <div class=" my-5 " style="padding:0px 70px;background-color:#F0F4F7;">
+          <div class="text-center" style="width:100%;padding-bottom:10px;">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./assets/list.svg" alt="" />
+            </div>
+            <h2 class="fw-medium " style="font-size: 42px;padding:20px 0px;">Lists</h2>
+            <p class="fs-6 mx-auto " style="font-weight:400; max-width: 1140px;">
+              Our software allows you to build your own lists and add each dataset
+              to one or multiple lists. Lists can be a powerful tool when combining
+              data sets. Imagine one of your companies is in the pet niche and you
+              need leads for your pet brand. You extract the user followers from the
+              top 30 pet accounts on Twitter and add them to your 'pet list'. Our
+              software will then identify which users are found the most times in
+              each of the 30 pet Twitter accounts. The list table for your pet
+              company in our software is now sorted by the users most interested in
+              pets, ensuring you can reach out to those users first and generate
+              sales fast.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="py-5">
+        <div class="container">
+            <!-- Title -->
+            <h1 class="text-center mb-5" style="font-size: 42px; font-weight:500;">WOW</h1>
+    
+            <!-- Grid Container -->
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100" style="border-radius: 20px; border:  1px solid rgba(0, 0, 0, 0.055); background-color: #f8f9fa; padding: 24px;">
+                        <div class="card-body">
+                            <img src="./assets/up.svg" alt="Upload" style="width: 40px; height: 40px; margin-bottom: 20px;">
+                            <p style=" font-size:14px;"><span class="fw-bold">Upload documents</span> - PDFs, Images, screenshots, bank statements, financial documents</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100" style="border-radius: 20px; border:  1px solid rgba(0, 0, 0, 0.055); background-color: #f8f9fa; padding: 24px;">
+                        <div class="card-body">
+                            <img src="./assets/qu.svg" alt="Quickly" style="width: 40px; height: 40px; margin-bottom: 20px;">
+                            <p style=" font-size:14px;"><span class="fw-bold">Quickly</span> and easily exclude parts of the documents you don't want to convert</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100" style="border-radius: 20px; border:  1px solid rgba(0, 0, 0, 0.055); background-color: #f8f9fa; padding: 24px;">
+                        <div class="card-body">
+                            <img src="./assets/co.svg" alt="Compare" style="width: 40px; height: 40px; margin-bottom: 20px;">
+                            <p style=" font-size:14px;"><span class="fw-bold">Compare</span> the original documents to the newly extracted data</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100" style="border-radius: 20px; border:  1px solid rgba(0, 0, 0, 0.055); background-color: #f8f9fa; padding: 24px;">
+                        <div class="card-body">
+                            <img src="./assets/sh.svg" alt="Share" style="width: 40px; height: 40px; margin-bottom: 20px;">
+                            <p style=" font-size:14px;">Decide if you want to <span class="fw-bold">share</span> the conversion with your team members or is only visible to yourself</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100" style="border-radius: 20px; border: 1px solid rgba(0, 0, 0, 0.055); background-color: #f8f9fa; padding: 24px;">
+                        <div class="card-body">
+                            <img src="./assets/cat.svg" alt="Categorise" style="width: 40px; height: 40px; margin-bottom: 20px;">
+                            <p style=" font-size:14px;"><span class="fw-bold">Categorise</span> the documents for easy search and organization</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100" style="border-radius: 20px; border:  1px solid rgba(0, 0, 0, 0.055); background-color: #f8f9fa; padding: 24px;">
+                        <div class="card-body">
+                            <img src="./assets/not.svg" alt="Notes" style="width: 40px; height: 40px; margin-bottom: 20px;">
+                            <p style=" font-size:14px;">add internal <span class="fw-bold">notes</span> to each conversion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid py-5" style="background-color:#F0F4F7;">
+      <p class="text-center" style="font-size: 42px; font-weight: 500;">Features</p>
+      <div class="container">
+        <div class="row justify-content-center" style="gap: 40px;">
+          <div class="col-12 col-md-6 d-flex flex-column align-items-center text-center p-4 rounded-2" 
+               style="background-color: rgba(255, 255, 255, 0.969); max-width: 586px;">
+            <img src="./assets/Vector.svg" style="width:40px;" alt="" class="pb-3" />
+            <p style="font-size:18px;font-weight: 600;">Extract Emails On Autopilot</p>
+            <p class="small" style="font-size: 14px;">
+              From your competitors to the top influencers in your niche you
+              can easily extract any audience on Twitter for highly relevant
+              emails.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column align-items-center text-center p-4 rounded-2" 
+               style="background-color: rgba(255, 255, 255, 0.969); max-width: 586px;">
+            <img src="./assets/subway_download-1.svg" style="width:40px;" alt="" class="pb-3" />
+            <p style="font-size:18px;font-weight: 600;">Extract Emails On Autopilot</p>
+            <p class="small" style="font-size: 14px;">
+              From your competitors to the top influencers in your niche you
+              can easily extract any audience on Twitter for highly relevant
+              emails.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="my-5 py-5"  >
+    <h1 class="text-center" style="font-size: 42px;">Testimonials</h1>
+    <div class="container">
+      <div class="row justify-content-center g-4 my-5">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="card p-4 border border-secondary-subtle rounded-4 h-100" style="background-image: url(./assets/wave.svg);background-size: cover;background-color: #FBFBFB;">
+                  <div class="d-flex align-items-around">
+                      <img src="./assets/1.svg" class="rounded-circle me-2" width="90" height="60" alt="Profile">
+                      <div>
+                          <p class="mb-0 fs-5 fw-bolder">TCI Lead Gen</p>
+                          <span ><i> P Marinov</i></span>
+                          <p class="fs-4 ms-auto text-warning">★★★★★</p>
+                      </div>
+                  </div>
+                  <img src="./assets/line.svg" alt="">
+                  <img src="image/Frame 709.svg" alt="">
+                  <p style="margin-top:28px;">
+                      "A lot of people fail with cold email because they use leads that have been scraped a million times over.
+                      Scraping Twitter gets you untouched lead. Getting a 79.5% open rate and 15.5% reply rate with Social
+                      Hunters leads."
+                  </p>
+              </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="card p-4 border border-secondary-subtle rounded-4 h-100" style="background-image: url(./assets/wave.svg);background-size: cover;background-color: #FBFBFB;">
+                  <div class="d-flex align-items-around">
+                      <img src="./assets/2.svg" class="rounded-circle me-2" width="90" height="60" alt="Profile">
+                      <div class="ms-3">
+                          <h4 class="mb-0  fs-5  fw-bolder">Nymbler</h4>
+                          <span><i>B Schielke</i></span>
+                          <p class="fs-4 text-warning">★★★★★</p>
+                      </div>
+                  </div>
+                  <img src="./assets/line.svg" alt="">
+                  <img src="image/Frame 709.svg" alt="">
+                  <p style="margin-top:28px;">
+                      "Social Hunters got me a 23% response rate compared to 5% with everything else being exactly the same.
+                      Just the fact that these inboxes are generally less crowded makes it a no brainer."
+                  </p>
+              </div>
+          </div>
+  
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="card p-4 border border-secondary-subtle rounded-4 h-100" style="background-image: url(./assets/wave.svg);background-size: cover;background-color: #FBFBFB;">
+                  <div class="d-flex align-items-around">
+                      <img src="./assets/3.svg" class="rounded-circle me-2" width="100" height="60" alt="Profile">
+                      <div class="ms-3">
+                          <h4 class="mb-0  fs-5  fw-bolder">InfluxLeads</h4>
+                          <span ><i> A Mayoral</i></span>
+                          <p class="fs-4 ms-auto text-warning">★★★★★</p>
+                      </div>
+                  </div>
+                  <img src="./assets/line.svg" alt="">
+                  <img src="image/Frame 709.svg" alt="">
+                  <p style="margin-top:28px;">
+                      "It lets me extract valuable information from Twitter, making lead gen easy and efficient.
+                      I no longer need to rely on any other lead services."
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    </section>
+
+    
+    
+<section class="container  " >
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-start mt-4 px-2 " >
+    <div class="col" >
+      <div class="card h-100 border rounded-4 p-4">
+        <div class="card-body" style="text-align: start;">
+          <h5 class="fw-medium" style="font-size: 36px;">Starter</h5>
+          <p class="text-muted" style="margin-bottom:32px;font-size: 14px;">No Minimum Commitment</p>
+          <p class="fs-3 fw-bold " style="padding-bottom:32px;">
+            $59.95 <small class="text-muted" style="font-size: 18px;">/Month</small>
+          </p>
+          <p class="text-muted" style="font-size: 14px;">Credit Roll Over</p>
+          <h6 class="fw-bold">What's Included:</h6>
+          <ul class="list-unstyled" style="font-size: 14px;">
+            <li class="mb-2">
+              <img src="./assets/plus.svg" alt="" class="me-2" />1000
+              email credits
+            </li>
+            <li class="mb-2">
+              <img src="./assets/plus.svg" alt="" class="me-2" />List
+              Builder
+            </li>
+            <li class="mb-2">
+              <img
+                src="./assets/plus.svg"
+                alt=""
+                class="me-2"
+              />Delivered in 48 - 78 hours
+            </li>
+            <li class="mb-2">
+              <img
+                src="./assets/plus.svg"
+                alt=""
+                class="me-2"
+              />Export contacts to CSV
+            </li>
+          </ul>
+          <button class="btn border-black w-100 fw-bold mt-3 rounded-1" style="font-size: 16px ;padding:16px 32px;">
+            Get Started
+          </button>   
+        </div>
+      </div>
+    </div>
+    <div class="col jj"  style=" background-image: url('./assets/Frame 30.svg');background-size: cover;background-repeat: no-repeat ; padding:60px 10px;">
+      <div class=" h-100 p-4 rounded-3" style="
+      border-radius:40px;
+       max-width:2090px;
+    ">
+        <div class="card-body" >
+          <h5 class="text-center fs-1" style="font-weight: 600;">Pro</h5>
+          <p class="text-muted text-center fs-6" style="margin-bottom:32px;">No Minimum Commitment</p>
+          <p class="fs-3 fw-bold text-center" style="padding-bottom:32px;">
+            $99.95 <small class="text-muted" style="font-size: 18px;">/Month</small>
+          </p>  
+          <p class="text-muted" style="font-size: 14px;">Credit Roll Over</p>
+          <h6 class="fw-bold">What's Included:</h6>
+          <ul class="list-unstyled" style="font-size: 14px;">
+            <li class="mb-2">
+              <img src="./assets/plus.svg" alt="" class="me-2" />2  000
+              email credits
+            </li>
+            <li class="mb-2">
+              <img src="./assets/plus.svg" alt="" class="me-2" />List
+              Builder
+            </li>
+            <li class="mb-2">
+              <img
+                src="./assets/plus.svg"
+                alt=""
+                class="me-2"
+              />Delivered in 48 - 78 hours
+            </li>
+            <li class="mb-2">
+              <img
+                src="./assets/plus.svg"
+                alt=""
+                class="me-2"
+              />Export contacts to CSV
+            </li>
+          </ul>
+          <button class="btn btn-dark border-black w-100 fw-bold mt-3 rounded-1" style="font-size: 16px ;padding:16px 32px;">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 border rounded-4 p-4" >
+        <div class="card-body " style="padding-bottom:32px;">
+          <h5 class="text-center" style="font-size:36px;font-weight: 600;">Enterprise</h5>
+          <p class="text-muted text-center" style="margin-bottom:32px;font-size: 14px;">No Minimum Commitment</p>
+          <p class="fs-3 fw-bold text-center" style="padding-bottom:32px;">
+            $299.95 <small class="text-muted" style="font-size: 18px;">/Month</small>
+          </p>
+          <p class="text-muted" style="font-size: 14px;">Credit Roll Over</p>
+          <h6 class="fw-bold">What's Included:</h6>
+          <ul class="list-unstyled" style="font-size: 14px;">
+            <li class="mb-2">
+              <img src="./assets/plus.svg" alt="" class="me-2" />7000
+              email credits
+            </li>
+            <li class="mb-2">
+              <img src="./assets/plus.svg" alt="" class="me-2" />List
+              Builder
+            </li>
+            <li class="mb-2">
+              <img src="./assets/plus.svg" alt="" class="me-2" />Delivered in
+              48 - 78 hours
+            </li>
+            <li class="mb-2">
+              <img
+                src="./assets/plus.svg"
+                alt=""
+                class="me-2"
+              />Export contacts to CSV
+            </li>
+          </ul>
+          <button class="btn border-black w-100 fw-bold mt-3 rounded-1" style="font-size: 16px ;padding:16px 32px;">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div style="background-image: url(./assets/foot.svg);background-size: cover;background-repeat: no-repeat;">
+
+      <section class="container my-5">
+        <p class="text-center mb-5 fw-bold my-2" style="font-size:42px;">FAQ</p>
+        <div class="accordion  mx-auto" style="max-width:1140px;" >
+            <div class=" rounded-2 mb-3 " >
+                <h2 class="accordion-header" >
+                    <button class="accordion-button bg-light border-0 shadow-none text-muted fs-5" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse1" style="height:80px;">
+                        How long does it take to extract the emails?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse">
+                    <div class="accordion-body"></div>
+                </div>
+            </div>
+            <div class="rounded-2  mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-light border-0 shadow-none text-muted fs-5" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse2" style="height:80px;">
+                        Is it only business emails?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse">
+                    <div class="accordion-body"></div>
+                </div>
+            </div>
+            <div class="rounded-2 ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-light border-0 shadow-none text-muted fs-5" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse3" style="height:80px;">
+                        Do I need to connect my Twitter account?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse">
+                    <div class="accordion-body"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+ 
+<br>
+
+<section class="subscribe-section py-5 ">
+  <div class="container d-flex justify-content-center">
+      <div class="row justify-content-center rounded-4" style="background-color: #F4F4F4;padding:60px;max-width:821px;"> 
+          <div class="col   ">
+              <div class="subscribe-card">
+                  <div class="text-center mb-4">
+                      <h4 class="mb-0 fs-6">
+                          <span class="fw-bold">Subscribe</span> to get our latest news and updates!
+                      </h4>
+                  </div>
+                  <div class="">
+                      <form class="suub d-flex gap-3">
+
+                          <input type="text" class="form-control border-0" placeholder="First Name" >
+                          <input type="email" class="form-control  border-0" placeholder="Email">
+                          <button type="submit" class="btn btn-dark subscribe-btn" style="padding:10px 36px;">Subscribe</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+  
+  <!-- Footer -->
+  <footer class="gradient-footer pt-5" style="background-image: url(./assets/footer.svg); background-size: cover; background-repeat: no-repeat;">
+    <div class="container">
+      <!-- Main Footer Content -->
+      <div class="row mb-5 text-center text-lg-start">
+        <!-- Brand Section -->
+        <div class="col-lg-4 mb-4">
+          <h2 class="text-white fw-bold" style="font-size: 40px;">Hypability</h2>
+          <p class="text-white mb-3">Extract emails from your target audience on Twitter.</p>
+          <p class="text-white mb-3">Find emails from any audience or niche. Build highly targeted lead lists that get more replies and sales.</p>
+          <p class="text-white mb-3">contact@hypability.ai</p>
+        </div>
+  
+        <!-- Links Section -->
+        <div class="col-md-6 col-lg-2 mb-4">
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Affiliates</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Terms</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+          </ul>
+        </div>
+  
+        <!-- Links Section 2 -->
+        <div class="col-md-6 col-lg-2 mb-4">
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Features</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Plans</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Testimonials</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none">Login</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media Icons -->
+        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-start">
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#" class="text-white"><img src="./assets/tw.svg" alt="Twitter"></a>
+            <a href="#" class="text-white"><img src="./assets/in.svg" alt="Instagram"></a>
+            <a href="#" class="text-white"><img src="./assets/ln.svg" alt="LinkedIn"></a>
+            <a href="#" class="text-white"><img src="./assets/fa.svg" alt="Facebook"></a>
+            <a href="#" class="text-white"><img src="./assets/tik.svg" alt="TikTok"></a>
+            <a href="#" class="text-white"><img src="./assets/yo.svg" alt="YouTube"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Footer Copyright -->
+    <div class="py-4 text-center" style="background-color: rgba(0, 0, 0, 0.178);">
+      <p class="text-white mb-0">© Copyright 2024 Hypability - All Rights Reserved</p>
+    </div>
+  </footer>
+  
+      
+    </div>
+    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
