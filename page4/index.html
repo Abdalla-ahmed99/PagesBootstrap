@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        *{
+          margin: 0px;
+          padding: 0px;
+        }
+        body {
+          font-family: 'Poppins', sans-serif;
+        }
+        #image{
+          display: block;
+        }
+        input::placeholder {
+          color: rgb(169, 169, 169) !important;
+          padding-left:30px;
+          opacity: 1;
+        }
+        
+        @media (max-width:990px) {
+          .image{
+           
+            display: none;
+            }
+        }
+        /* Add responsive styles */
+        @media (max-width: 768px) {
+          .navbar {
+            padding: 15px 20px !important;
+          }
+
+          .navbar-brand {
+            font-size: 20px !important;
+          }
+
+          .hero-section {
+            text-align: center;
+            padding: 20px;
+          }
+
+          .hero-section h1 {
+            font-size: 2rem !important;
+            line-height: 1.3 !important;
+          }
+
+          .hero-section .col-md-6 {
+            padding: 20px;
+          }
+
+          .feature-cards {
+            padding: 20px !important;
+          }
+
+          .feature-cards .col {
+            padding: 10px !important;
+          }
+
+          .testimonial-section {
+            padding: 40px 20px !important;
+          }
+
+          .plans-section .card {
+            margin: 0 auto;
+          }
+
+          .faq-section .accordion {
+            width: 100% !important;
+          }
+
+          .footer-subscribe .row {
+            flex-direction: column;
+          }
+
+          .footer-subscribe form {
+            flex-direction: column;
+            gap: 10px !important;
+            margin-top: 15px;
+          }
+        }
+
+        @media (max-width: 576px) {
+          section {
+            padding: 40px 20px !important;
+          }
+
+          .hero-section h1 {
+            font-size: 1.75rem !important;
+          }
+
+          .feature-cards .card {
+            width: 100% !important;
+            margin-left: 0 !important;
+          }
+
+          .social-icons {
+            padding-right: 0 !important;
+            justify-content: center !important;
+          }
+        }
+    </style>
+</head>
+<body>
+  <div>
+    <div style="height:1100px;background-image: url(./assets/bg1.svg);background-size: cover; background-repeat: no-repeat;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="color:black; padding: 28px 60px;">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" style="font-size: 24px;" href="#">
+            Ecom Analytica
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav d-flex align-items-center me-5" style="gap:50px;">
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#" style="color: #ffffff;">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#" style="color: #ffffff;">Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#" style="color: #ffffff;">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#" style="color: #ffffff;">Contact</a>
+              </li>
+            </ul>
+      
+            <button type="button" class="btn btn-light rounded-5 fw-bold " style="padding:10px 36px;">
+              Login
+            </button>
+          </div>
+        </div>
+      </nav>
+
+    
+      <section class="container-fluid hero-section">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <div style="margin-left:20px;">
+            <h1 class="display-4 fw-bold" style="margin-bottom:40px;font-size: 3rem;font-weight:medium;line-height:120%;">
+              Search and Filter<br class="d-none d-md-block" />100 Million Etsy Products<br class="d-none d-md-block " />100 Million AliExpress Products
+            </h1>
+            <p class=" fs-6"style="margin-bottom:90px;line-height:184%;">
+              Start Using The #1 filter system
+              <br class="d-none d-md-block " />Join +50.000 people saving time
+            </p>
+            <button type="button" class="btn btn-dark rounded-5 fw-bold " style="padding:10px 36px;">
+              Get Started
+            </button>
+          </div></div>
+
+          <div class="col-12 col-md-6 pe-0 text-end mt-4 mt-md-0">
+            <img src="./assets/b222.svg" class="img-fluid w-100" qalt="" />
+          </div>
+         </div>
+    </section>
+
+  </div>
+    <section style="width: 100% ;padding:56px 120px;background-color: #7d76dc11; ">
+      <div class="text-center mb-5" >
+        <p class="fs-4 fw-medium" style="font-weight: 500">
+          Trusted by 1000s of Companies to Fuel Business Growth!
+        </p>
+        <p class="fs-6 text-muted" style="line-height:160%;">
+          From VC backed startups to established SaaS to agencies to fast
+          growing B2B brands –<br class="d-none d-md-block" />
+          all use our data extraction services to grow fast!
+        </p>
+      </div>
+
+      <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center"  >
+        <div class="col text-center">
+          <img
+            src="./assets/astera 1.svg"
+            class="img-fluid"
+            style="max-width: 200px"
+            alt=""
+          />
+        </div>
+        <div class="col text-center">
+          <img
+            src="./assets/SU 1.svg"
+            class="img-fluid"
+            style="max-width: 200px"
+            alt=""
+          />
+        </div>
+        <div class="col text-center">
+          <img
+            src="./assets/saba-software-logo-vector-2021 1.svg"
+            class="img-fluid"
+            style="max-width: 200px"
+            alt=""
+          />
+        </div>
+        <div class="col text-center">
+          <img
+            src="./assets/sonata 1.svg"
+            class="img-fluid"
+            style="max-width: 200px"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <div  style="background-image: url(./assets/cye.svg);background-size:cover ;background-position:center;">
+      <section class="container d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-start py-5   gap-5 " style="height: 306px;">
+        <div >
+          <p class="fw-bold fs-2">Take Your Company to the Next Level</p>
+          <p class="text-muted" style="font-size:14px;">Our customers have made hundreds of thousands of dollars using our fully verified leads</p>
+        </div>
+      
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-1   ">
+          <button type="button" class="btn text-white fs-5  fw-medium rounded-5" 
+            style="background-color:rgba(34, 34, 34, 1) ; height: 50px;  width: 193px;">
+            <img src="./assets/shopping-bag.svg" alt="">
+            Buy Now
+          </button>
+          <button type="button" class="btn btn-outline-dark fs-5 rounded-5 " 
+            style="height: 50v px;  width: 291px;">
+            <img src="./assets/download.svg" alt="">
+            Download Sample
+          </button>
+        </div>
+      </section>
+
+
+      <section class="d-flex align-items-center flex-column ">
+            <div style="width:100%;text-align: center;padding:60px 70px;background-color: rgba(78, 183, 193, 0.05);">
+                <p class="fw-medium" style="font-size: 42px;">How It Works</p>
+                <p class="fs-6"  >We don't need your Twitter account login and our software runs on our servers.</p>
+                <img class="image" src="./assets/arrows.svg" alt="" style="padding:52px 0px ;">
+                
+                <div class="row gap-4 justify-content-center">
+
+                  <div class="col text-start" style="max-width: 344px; height: 258px; background-color: white; padding:12px 24px;">
+                      <p class="fw-bold">STEP 1</p>
+                      <p>Search Twitter for your target audience and Twitter accounts that have authority in your niche and copy their Twitter usernames.</p>
+                  </div>
+                  
+                  <div class="col text-start" style="max-width: 344px;background-color: white; padding:12px 24px;">
+                    <p class="fw-bold">STEP 2</p>
+                    <p>Enter the Twitter usernames in our software and select if you want to extract their user followers, user following or both. Decide how many users to extract, and click start.</p>
+                  </div>
+
+                  <div class="col text-start" style="max-width: 344px;background-color: white; padding:12px 24px;">
+                    <p class="fw-bold">STEP 3</p>
+                    <p>Our software will run and extract every user, match these users to our vast database and allow you to download all results to CSV. You will be notified when your data is complete and ready to download.</p>
+                </div>
+
+                </div>
+            </div>
+
+
+
+      <div>
+        <div class=" my-5 w-100" style="padding:0px 20px;">
+          <div class="text-center" style="max-width: 1140px">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./assets/list.svg" alt="" />
+            </div>
+            <h2 class="fw-bold " style="font-size: 20px;padding:20px 0px;">Lists</h2>
+            <p class="fs-6 mx-auto" style="max-width: 1140px;">
+              Our software allows you to build your own lists and add each dataset
+              to one or multiple lists. Lists can be a powerful tool when combining
+              data sets. Imagine one of your companies is in the pet niche and you
+              need leads for your pet brand. You extract the user followers from the
+              top 30 pet accounts on Twitter and add them to your 'pet list'. Our
+              software will then identify which users are found the most times in
+              each of the 30 pet Twitter accounts. The list table for your pet
+              company in our software is now sorted by the users most interested in
+              pets, ensuring you can reach out to those users first and generate
+              sales fast.
+            </p>
+          </div>
+        </div>
+      </div>
+</section >
+    </div>
+
+      <div style=" background-image: url(./assets/Group\ 51.svg);background-size: cover;  /* Adjust to fit */
+      /* Center the image */
+    background-repeat: no-repeat; ">
+      
+      <section class="container my-5">
+        <h1 class="fw-bold text-center mb-5">WOW</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-1">
+          
+          <div class="col d-flex justify-content-center">
+            <div class="shadow p-3 rounded-4 bg-white" style="max-width: 459px;">
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./assets/mdi_upload-box.svg" alt="">
+                <p class="mb-0" style="font-size: 16px;">
+                  <span class="fw-bold">Upload documents</span> - PDFs, Images,<br class="d-none d-md-block" />
+                  screenshots, bank statements, financial documents
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col d-flex justify-content-center">
+            <div class="shadow p-3 rounded-4 bg-white" style="max-width: 459px;">
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./assets/clarity_file-share-solid.svg" alt="">
+                <p class="mb-0" style="font-size: 16px;">
+                  Decide if you want to <span class="fw-bold">share</span> the <br class="d-none d-md-block" />
+                  conversion with your team members or keep it private
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col d-flex justify-content-center">
+            <div class="shadow p-3 rounded-4 bg-white w-100" style="max-width: 459px;">
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./assets/simple-icons_lightning.svg" alt="">
+                <p class="mb-0" style="font-size: 16px;">
+                  <span class="fw-bold">Quickly</span> and easily exclude parts of the<br class="d-none d-md-block" />
+                  documents you don't want to convert
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col d-flex justify-content-center">
+            <div class="shadow p-3 rounded-4 bg-white w-100" style="max-width: 459px;">
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./assets/Frame 863.svg" alt="">
+                <p class="mb-0" style="font-size: 16px;">
+                  <span class="fw-bold">Categorize</span> the documents for easy<br class="d-none d-md-block" />
+                  search and organization
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col d-flex justify-content-center">
+            <div class="shadow p-3 rounded-4 bg-white w-100" style="max-width: 459px;">
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./assets/mdi_file-compare.svg" alt="">
+                <p class="mb-0" style="font-size: 16px;">
+                  <span class="fw-bold">Compare</span> the original documents to<br class="d-none d-md-block" />
+                  the newly extracted data
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col d-flex justify-content-center">
+            <div class="shadow p-3 rounded-4 bg-white w-100" style="max-width: 459px;">
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./assets/weui_note-filled.svg" alt="">
+                <p class="mb-0" style="font-size: 16px;">
+                  Add internal <span class="fw-bold">notes</span> to each conversion
+                </p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+
+
+
+
+    <div>
+      <p class="text-center py-5" style="font-size:42px; font-weight:500;">Features</p>
+      <section class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+          
+          <div class="col d-flex justify-content-center">
+            <div class="d-flex flex-column text-center p-4 rounded-3" style="max-width: 586px; background-color: rgba(247, 248, 248, 0.9686);">
+              <div>
+                <img src="./assets/Vector.svg" style="width: 40px;" alt="" class="pb-3" />
+              </div>
+              <div>
+                <p class="fs-5 fw-bold">Extract Emails On Autopilot</p>
+                <p class="small" style="font-size: 16px;">
+                  From your competitors to the top influencers in your niche you can easily extract any audience on Twitter for highly relevant emails.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col d-flex justify-content-center">
+            <div class="d-flex flex-column text-center p-4 rounded-3" style="max-width: 586px; background-color: rgba(247, 248, 248, 0.9686);">
+              <div>
+                <img src="./assets/subway_download-1.svg" style="width: 40px;" alt="" class="pb-3" />
+              </div>
+              <div>
+                <p class="fs-5 fw-bold">Extract Emails On Autopilot</p>
+                <p class="small" style="font-size: 16px;">
+                  From your competitors to the top influencers in your niche you can easily extract any audience on Twitter for highly relevant emails.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+    </div>
+  </section>
+
+      <section class="  testimonial-section my-5" style="padding:80px 70px; background-color: rgba(78, 183, 193, 0.05);">
+        <h1 class="text-center mb-5 fw-bold" style="font-size:42px;">Testimonials</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col p-3">
+            <div class="card rounded-4 border-1 shadow  p-1 mb-5 bg-white rounded-1 text-start " style="max-width:348px;height: 345px;  border-color: rgba(172, 172, 172, 0.253);">
+              <div class="card-body" >
+                <div class="d-flex justify-content-start ps-4 mb-3">
+                  <img
+                    src="./assets/11.svg"
+                    alt=""
+                    class="me-3"
+                  />
+                  <div>
+                    <h6 class="fw-bold mb-0 fs-5">TCI Lead Gen</h6>
+                    <p class="small fs-6 mb-0"><i> P Marinov </i></p>
+                  </div>
+                </div>
+                <p class="card-text py-2">
+                  "A lot of people fail with cold email because they use leads that
+                  have been scraped a million times over. Scraping Twitter gets
+                  you untouched lead. Getting a 79.5% open rate and 15.5% reply
+                  rate with Social Hunters leads.
+                  <div class="text-warning">★ ★ ★ ★ ★</div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="card rounded-4 border-1 shadow  p-2 mb-5 bg-white rounded text-start " style="max-width:348px;height: 340px;  border-color: rgba(172, 172, 172, 0.253);">
+              <div class="card-body" >
+                <div class="d-flex justify-content-start ps-4 mb-3">
+                  <img
+                    src="./assets/22.svg"
+                    alt=""
+                    class="me-3"
+                  />
+                  <div>
+                    <h6 class="fw-bold mb-0 fs-5">Nymbler</h6>
+                    <p class="small fs-6  mb-0"><i> B Schielke </i></p>
+                  </div>
+                </div>
+                <p class="card-text py-3">
+                  Social Hunters got me a 23% response rate compared to 5% with everything else being exactly the same. Just the fact that these inboxes are generally less crowded makes it a no brainer.
+                  <div class="text-warning">★ ★ ★ ★ ★</div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col p-3">
+            <div class="card rounded-4 border-1 shadow  p-3 mb-5 bg-white rounded text-start " style="max-width:348px;height: 340px;  border-color: rgba(172, 172, 172, 0.253);">
+              <div class="card-body" >
+                <div class="d-flex justify-content-start ps-4 mb-3">
+                  <img
+                    src="./assets/33.svg"
+                    alt=""
+                    class="me-3"
+                  />
+                  <div>
+                    <h6 class="fw-bold mb-0 fs-5">InfluxLeads</h6>
+                    <p class="small fs-6  mb-0"><i> A Mayoral </i></p>
+                  </div>
+                </div>
+                <p class="card-text py-4">
+                  It lets me extract valuable information from Twitter, making lead gen easy and efficient. I no longer need to rely on any other lead services.
+                  <div class="text-warning">★ ★ ★ ★ ★</div>
+                </p>
+              </div>
+            </div>
+        </div>
+      
+    </section></div>
+
+    
+    
+    <section class="container plans-section my-5">
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mt-4">
+        <div class="col">
+          <div class="card h-100 border rounded-4 p-4" style="max-width: 400px;">
+            <div class="card-body" >
+              <div class="text-center" style="padding-bottom: 20px;"><img src="./assets/st.svg" alt="" ></div>
+              <h5 class="text-center fs-4 fw-bold">Starter</h5>
+              <p class="text-muted text-center fs-6">No Minimum Commitment</p>
+              <hr style="color: #00000057;">
+              <p class="fw-bold text-center" style="font-size:36px;">
+                $59.95 <small class="text-muted fs-6">/Month</small>
+              </p>
+              <p class="text-muted" style="font-size: 16px;padding-bottom:30px;">Credit Roll Over</p>
+              <h6 class="fw-bold">What's Included:</h6>
+              <ul class="list-unstyled text-muted" style="font-size:14px;">
+                <li class="mb-2">
+                  <img src="./assets/plus.svg" alt="" class="me-2" />1000
+                  email credits
+                </li>
+                <li class="mb-2">
+                  <img src="./assets/plus.svg" alt="" class="me-2" />List
+                  Builder
+                </li>
+                <li class="mb-2">
+                  <img src="./assets/plus.svg" alt="" class="me-2" />Delivered in
+                  48 - 78 hours
+                </li>
+                <li class="mb-2">
+                  <img
+                    src="./assets/plus.svg"
+                    alt=""
+                    class="me-2"
+                  />Export contacts to CSV
+                </li>
+              </ul>
+              <button class="btn border-black w-100 rounded-5  fw-medium mt-3" style="font-size: 16px ;padding:16px 32px;">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 border rounded-4 p-4 justify-content-center " style="max-width: 400px; background: linear-gradient(145deg, #9c42f5 0%, #f58442 100%);" >
+            <div class="card-body text-white "  style=" ">
+              <div class="text-center" style="padding-bottom: 20px;"><img src="./assets/k.svg" alt="" ></div>
+              <h5 class="text-center fs-2 fw-bold">Pro</h5>
+              <p class="text-center fs-6 ">No Minimum Commitment</p>
+              <hr style="color: #ffffff;">
+
+              <p class="fs-1 fw-bold text-center">
+                $99.95 <small class=" fs-4 ">/Month</small>
+              </p>  
+              <p class="" style="font-size: 16px;padding-bottom:30px;">Credit Roll Over</p>
+              <h6 class="fw-bold">What's Included:</h6>
+              <ul class="list-unstyled fs-6">
+                <li class="mb-2">
+                  <img src="./assets/Ellipse 174.svg" alt="" class="me-2" />1000
+                  email credits
+                </li>
+                <li class="mb-2">
+                  <img src="./assets/Ellipse 174.svg" alt="" class="me-2" />List
+                  Builder
+                </li>
+                <li class="mb-2">
+                  <img
+                    src="./assets/Ellipse 174.svg"
+                    alt=""
+                    class="me-2"
+                  />Delivered in 48 - 78 hours
+                </li>
+                <li class="mb-2">
+                  <img
+                    src="./assets/Ellipse 174.svg"
+                    alt=""
+                    class="me-2"
+                  />Export contacts to CSV
+                </li>
+              </ul>
+              </div><div>
+              <button class="btn btn-light rounded-5 w-100 fw-medium mt-3" style="font-size: 16px ;padding:16px 32px;">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border rounded-4 p-4" style="max-width: 400px;">
+            <div class="card-body" >
+              <div class="text-center" style="padding-bottom: 20px;"><img src="./assets/li.svg" alt="" ></div>
+              <h5 class="text-center fs-4 fw-bold">Enterprise</h5>
+              <p class="text-muted text-center fs-6">Yearly - 2 Months FREE</p>
+              <hr style="color: #00000057;">
+              <p class=" fw-bold text-center" style="font-size: 36px;">
+                $299.95 <small class="text-muted fs-6">/Year</small>
+              </p>
+              <p class="text-muted " style="font-size: 16px;padding-bottom:30px;">Credit Roll Over</p>
+              <h6 class="fw-bold">What's Included:</h6>
+              <ul class="list-unstyled text-muted" style="font-size:14px;">
+                <li class="mb-2">
+                  <img src="./assets/plus.svg" alt="" class="me-2" />7000
+                  email credits
+                </li>
+                <li class="mb-2">
+                  <img src="./assets/plus.svg" alt="" class="me-2" />List
+                  Builder
+                </li>
+                <li class="mb-2">
+                  <img src="./assets/plus.svg" alt="" class="me-2" />Delivered in
+                  48 - 78 hours
+                </li>
+                <li class="mb-2">
+                  <img
+                    src="./assets/plus.svg"
+                    alt=""
+                    class="me-2"
+                  />Export contacts to CSV
+                </li>
+              </ul>
+              <button class="btn border-black w-100 fw-medium rounded-5 mt-3 " style="font-size: 16px ;padding:16px 32px;">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <div style="background-image: url(./assets/foot.svg);background-size: cover;background-repeat: no-repeat; background-position:bottom8;">
+
+      <section class=" py-4 my-5" style="background-color: rgba(78, 183, 193, 0.05);">
+        <p class="text-center mb-5 fw-bold my-2" style="font-size:42px;">FAQ</p>
+        <div class="accordion  mx-auto" style="max-width:1140px;" >
+            <div class=" rounded-2 mb-3 " >
+                <h2 class="accordion-header" >  
+                    <button class="accordion-button bg-white border-0 shadow-none text-muted fs-5" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse1" style="height:80px;">
+                        How long does it take to extract the emails?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse">
+                    <div class="accordion-body"></div>
+                </div>
+            </div>
+            <div class="rounded-2  mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-white border-0 shadow-none text-muted fs-5" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse2" style="height:80px;">
+                        Is it only business emails?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse">
+                    <div class="accordion-body"></div>
+                </div>
+            </div>
+            <div class="rounded-2 ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-white border-0 shadow-none text-muted fs-5" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse3" style="height:80px;">
+                        Do I need to connect my Twitter account?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse">
+                    <div class="accordion-body"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- Footer Section -->
+    <footer class="py-5 text-white ">
+      <!-- Subscribe Section -->
+      <div class="container mb-5">
+        <div class="rounded-4 mx-2 " style="border: 10px solid rgba(255, 255, 255, 0.23);">
+          <div class="footer-subscribe rounded-3 d-flex justify-content-center align-items-center text-center  text-md-start p-4" style="background-color: #222222;">
+            <div class="row w-100 align-items-center py-4">
+              <div class="col-md-4">
+                <p class="text-white mb-0 fs-6"><strong>Subscribe</strong> to get our latest news and updates!</p>
+              </div>
+              <div class="col-md-8">
+                <form class="d-flex flex-column flex-md-row gap-2 justify-content-center">
+                  <input type="text" class="form-control bg-secondary bg-opacity-25 rounded-5 border-0 text-white" style="max-width: 249px;" placeholder="First Name">
+                  <input type="email" class="form-control bg-secondary bg-opacity-25 rounded-5 border-0 text-white" style="max-width: 249px;" placeholder="Email">
+                  <button type="submit" class="btn btn-light rounded-5 fs-6 fw-bold" style=" width: 154px; height: 44px;">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Main Footer Content -->
+      <div class="container">
+        <div class="row g-3 g-lg-5">
+          
+          <!-- Company Info -->
+          <div class="col-md-6 col-lg-4 text-center text-md-start">
+            <h3 class="mb-3">Ecom Analytica</h3>
+            <p>Extract emails from your target audience on Twitter.</p>
+            <p>Find emails from any audience or niche.</p>
+            <p>Build highly targeted lead lists that get more replies and sales</p>
+          </div>
+    
+          <!-- Quick Links - Left -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <ul class="list-unstyled text-center text-md-start">
+              <li class="mb-2"><a href="#" class="text-decoration-none text-white">Affiliates</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-white">Terms</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-white">Privacy Policy</a></li>
+            </ul>
+          </div>
+    
+          <!-- Quick Links - Right -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <ul class="list-unstyled text-center text-md-start">
+              <li class="mb-2"><a href="#" class="text-decoration-none text-white">Features</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-white">Plans</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-white">Testimonials</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-white">Login</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Info & Social Media -->
+          <div class="col-md-6 col-lg-4 text-center text-md-end">
+            <p class="mb-3">contact@ecomanalytica.io</p>
+            <div class="d-flex justify-content-center justify-content-md-end gap-3">
+              <a href="#" class="text-white"><img src="./assets/ph_x-logo-fill.svg" alt="Twitter"></a>
+              <a href="#" class="text-white"><img src="./assets/ri_instagram-fill.svg" alt="Instagram"></a>
+              <a href="#" class="text-white"><img src="./assets/simple-icons_linkedin.svg" alt="LinkedIn"></a>
+              <a href="#" class="text-white"><img src="./assets/ic_baseline-facebook.svg" alt="Facebook"></a>
+              <a href="#" class="text-white"><img src="./assets/ic_baseline-tiktok.svg" alt="TikTok"></a>
+              <a href="#" class="text-white"><img src="./assets/ri_youtube-fill.svg" alt="YouTube"></a>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Copyright Section -->
+    <div class="mt-5">
+      <div class="col-12 text-center py-3" style="background-color: rgba(0, 0, 0, 0.164);">
+        <p class="text-muted mb-0">© Copyright 2024 EcomAnalytica - All Rights Reserved</p>
+      </div>
+    </div>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
