@@ -1,0 +1,14 @@
+<svg width="1280" height="458" viewBox="0 0 1280 458" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-outside-1_0_274" maskUnits="userSpaceOnUse" x="70" y="80" width="1140" height="298" fill="black">
+<rect fill="white" x="70" y="80" width="1140" height="298"/>
+<path d="M70 110C70 104.477 74.4772 100 80 100H1200C1205.52 100 1210 104.477 1210 110V348C1210 353.523 1205.52 358 1200 358H80C74.4772 358 70 353.523 70 348V110Z"/>
+</mask>
+<path d="M70 110C70 104.477 74.4772 100 80 100H1200C1205.52 100 1210 104.477 1210 110V348C1210 353.523 1205.52 358 1200 358H80C74.4772 358 70 353.523 70 348V110Z" fill="white"/>
+<path d="M70 110C70 93.4315 83.4315 80 100 80H1180C1196.57 80 1210 93.4315 1210 110V120C1210 120 1205.52 120 1200 120H80C74.4772 120 70 120 70 120V110ZM1210 348C1210 364.569 1196.57 378 1180 378H100C83.4315 378 70 364.569 70 348V338C70 338 74.4772 338 80 338H1200C1205.52 338 1210 338 1210 338V348ZM70 358V100V358ZM1210 100V358V100Z" fill="url(#paint0_linear_0_274)" fill-opacity="0.3" mask="url(#path-1-outside-1_0_274)"/>
+<defs>
+<linearGradient id="paint0_linear_0_274" x1="70" y1="229" x2="1210" y2="229" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2B36FF"/>
+<stop offset="1" stop-color="#FF5994"/>
+</linearGradient>
+</defs>
+</svg>
